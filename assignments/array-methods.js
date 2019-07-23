@@ -93,5 +93,9 @@ let potentialSponsor = runners.map(function(funder){
 })
 console.log(potentialSponsor);
 // Problem 2
-
+//Let's see if we have enough donations to cover our run next year. 
+let raiseMoney = runners.reduce(function(acc, currentValue){
+    return acc - currentValue.donation;
+}, 20000);
+console.log(`You need to raise $${raiseMoney}`);
 // Problem 3
