@@ -1,6 +1,29 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+const planet = "Earth";
+
+function disneyland(){  
+  let mood = "happiest"  
+  console.log(`Disneyland is the ${mood} place on ${planet}.`)
+
+  function walmartOnBlackFriday(){
+    mood = "infernal";
+    console.log(`Wal-Mart is the most ${mood} place on ${planet}.`);
+
+    function tacoBell(){
+      let mood = "tastiest"
+      console.log(`TacoBell is the ${mood} place on ${planet}.`);
+    }
+
+    tacoBell();
+  }
+
+  walmartOnBlackFriday();
+}
+
+disneyland();
+
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
