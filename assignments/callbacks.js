@@ -63,22 +63,21 @@ multiplyNums(4, 12, function(product){
 });
 
 
-function contains(item, list, cb){
-  // contains checks if an item is present inside of the given array/list.
-  return list.filter(function(stuff){
-    item == stuff;
-  });
+// function contains(item, list, callback){
+
+function contains(item, list, callback){
+//   // contains checks if an item is present inside of the given array/list.
+
+  return callback(item);
 }
 
-contains("Gum", items, function(test){
-  console.log(`stuff is there = ${test}`)
-}
-
-
+contains('yo-yo', items, function(find){
+console.log(items.includes(find));
+});
 /* STRETCH PROBLEM */
+// let studentsArray = ["Austen", "Austin", "Ryan", "Ryan", "Edd", "Brent", "Britt", "Jazmyne", "Dan"]
 
-// function removeDuplicates(array, cb) {
-//   // removeDuplicates removes all duplicate values from the given array.
-//   // Pass the duplicate free array to the callback function.
-//   // Do not mutate the original array.
-// }
+  // removeDuplicates removes all duplicate values from the given array.
+  // sumNums adds two numbers (x, y) and passes the result to the callback.
+  // Pass the duplicate free array to the callback function.
+  // Do not mutate the original array.
